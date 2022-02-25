@@ -1,0 +1,53 @@
+$main-color: #F2A464;
+$accent-color:#EADED0;
+$second-color:#FF9627;
+$base-color:#F6F0E9;
+$dark-color:rgba(0,0,0,0.3);
+
+@mixin center() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin width1200() {
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+@mixin row() {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-end() {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-height($height) {
+  height: $height;
+  line-height: $height;
+  text-align: center;
+}
+
+@mixin parallax($y-aixs) {
+  opacity: 0;
+  transform: translate(0, $y-aixs);
+  transition: all 1000ms;
+}
+
+@mixin parallax-on() {
+  opacity: 1;
+  transform: translate(0, 0);
+}

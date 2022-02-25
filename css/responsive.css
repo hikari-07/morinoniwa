@@ -1,0 +1,948 @@
+@charset "UTF-8";
+@media screen and (max-width: 480px) {
+  /*-------------
+    全体構造 
+---------------*/
+  /*---幅の調整---*/
+  .content {
+    width: auto;
+  }
+  header .header-menu {
+    width: auto;
+  }
+  main {
+    width: auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  /* メニュー(ハンバーガー)ボタン */
+  .hamburger-button {
+    display: block;
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 10px;
+    position: fixed;
+    top: 10;
+    right: 10;
+    z-index: 9999;
+  }
+  /*  ハンバーガーメニュー */
+  .hamburger-button path {
+    fill: #FF9627;
+  }
+  /* ナビゲーション */
+  .hamburger-nav {
+    background-color: #fff;
+    height: 100vh;
+    width: 90vw;
+  }
+  .hamburger-nav ul {
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 100%;
+  }
+  .hamburger-nav ul li {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+    border-bottom: 2px solid #F9F9F9;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .hamburger-nav ul li a {
+    display: block;
+    color: #000;
+    line-height: 1.2;
+  }
+  .hamburger-nav ul li a span {
+    color: #F2A464;
+    font-size: 14px;
+  }
+  main .main-content-title h3 {
+    font-size: 22px;
+  }
+  main .first-view h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  main .first-view img {
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 95%;
+    height: auto;
+  }
+  main .first-view-bottom-wrap {
+    margin-bottom: 30px;
+  }
+  main .first-view-bottom-wrap .first-view-bottom {
+    height: 50px;
+    margin-top: -50px;
+    padding-top: 10px;
+  }
+  main .first-view-bottom-wrap .first-view-bottom h3 {
+    font-size: 20px;
+  }
+  main .chui-jikou-bg {
+    width: 95%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+  }
+  main .chui-jikou-bg .chui-jikou {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  main .chui-jikou-bg .chui-jikou .chui-left {
+    text-align: left;
+    margin: 0 12px;
+  }
+  main .chui-jikou-bg .chui-jikou .chui-right {
+    margin-top: -50px;
+    margin-right: 0;
+  }
+  main .ryoukin {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  main .ryoukin a {
+    width: auto;
+    margin: 30px 10px;
+    padding: 10px 30px;
+    border-radius: 50px;
+  }
+  main .ryoukin a .ryoukin-left {
+    margin-left: 0;
+  }
+  main .ryoukin a .ryoukin-center {
+    margin: auto;
+  }
+  main .ryoukin a .ryoukin-center p {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  main .ryoukin a .ryoukin-center p .responsive {
+    display: block;
+  }
+  main .ryoukin a .ryoukin-right {
+    margin: auto 20px auto 10px;
+  }
+  main .ryoukin a .ryoukin-right i {
+    font-size: 30px;
+  }
+  /*-------------
+ ヘッダー
+---------------*/
+  header {
+    overflow: visible;
+    z-index: 10;
+    position: relative;
+  }
+  header .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-menu h1 {
+    margin: 30px 16px;
+  }
+  header .header-menu .pc-nav {
+    display: none;
+  }
+  header.on {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  /*-------------
+  フッター
+---------------*/
+  footer {
+    overflow: hidden;
+  }
+  footer .footer-menu {
+    display: block;
+    margin: 50px auto 70px auto;
+  }
+  footer .footer-menu .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  footer .footer-menu .footer-left p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-left: 0px;
+  }
+  footer .footer-menu .footer-left address {
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    margin-right: 30px;
+  }
+  footer .footer-menu .footer-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  footer .footer-menu .footer-right table th {
+    letter-spacing: 2px;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 0px 4px;
+  }
+  footer .footer-menu .footer-right table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+  footer .footer-menu .footer-right p {
+    font-size: 13px;
+    margin-right: 130px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  /*-------------
+  トップページ
+ ---------------*/
+  #home .main-image {
+    margin: 0 auto 40px auto;
+    text-align: center;
+    display: block;
+    position: relative;
+  }
+  #home .main-image .hospital {
+    top: 10%;
+    padding: 2px 16px;
+    opacity: 0;
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+  }
+  #home .main-image .hospital h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 14px;
+  }
+  #home .main-image .hospital p {
+    display: none;
+  }
+  #home .message {
+    display: block;
+    padding-top: 20px;
+    margin: 0 10px 100px 10px;
+  }
+  #home .message .dog-pc {
+    display: none;
+  }
+  #home .message .dog-responsive {
+    display: block;
+  }
+  #home .message .dog-responsive .dog-responsive-top {
+    margin-left: 60%;
+  }
+  #home .message .message-center {
+    margin: 0 20px;
+  }
+  #home .message .message-center h3 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  #home .message .message-center p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  #home .message .message-center .message-center-bottom {
+    padding: 20px 10px;
+    margin-top: 20px;
+  }
+  #home .message .message-right {
+    margin-bottom: -20px;
+  }
+  #home .menu {
+    display: block;
+  }
+  #home .menu section {
+    margin: 0 auto 80px auto;
+  }
+  /*-------------
+  当院について
+ ---------------*/
+  #about main .aisatsu-all .aisatsu {
+    display: block;
+    margin-bottom: 50px;
+  }
+  #about main .aisatsu-all .aisatsu section {
+    padding: 0 20px 20px 20px;
+  }
+  #about main .aisatsu-all .aisatsu .aisatsu-left {
+    margin: 0 10px 20px 10px;
+  }
+  #about main .aisatsu-all .aisatsu .aisatsu-right {
+    margin: 0 10px;
+  }
+  #about main .aisatsu-all .ishi-shoukai {
+    display: block;
+    margin: 0 10px 40px 10px;
+    padding: 40px 0;
+  }
+  #about main .aisatsu-all .ishi-shoukai .inchou-shoukai-left {
+    margin: 0 20px 30px 20px;
+  }
+  #about main .aisatsu-all .ishi-shoukai .inchou-shoukai-right {
+    margin: 0 20px;
+    width: auto;
+  }
+  #about main .aisatsu-all .ishi-shoukai .inchou-shoukai-right .responsive {
+    display: block;
+  }
+  #about main .aisatsu-all .ishi-shoukai .ishi-shoukai-left {
+    margin: 0 20px 60px 20px;
+  }
+  #about main .aisatsu-all .ishi-shoukai .ishi-shoukai-right {
+    margin: 0 20px;
+  }
+  #about main .animal-pic {
+    margin: 40px 10px;
+  }
+  #about main .animal-pic img {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  #about main .onegai {
+    width: 95%;
+    margin-bottom: 80px;
+    padding: 40px  10px 30px 10px;
+  }
+  #about main .onegai .onegai-text section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto 30px auto;
+    width: auto;
+    background-color: #F6F0E9;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  #about main .onegai .onegai-text section img {
+    margin-bottom: 15px;
+  }
+  #about main .onegai .onegai-text section div {
+    text-align: center;
+  }
+  #about main .onegai .onegai-text section div h4 {
+    font-size: 19px;
+    line-height: 1.6;
+    display: inline-block;
+    text-align: left;
+  }
+  #about main .onegai .onegai-text section div h4 br {
+    display: inline-block;
+  }
+  #about main .onegai .onegai-text section p {
+    border-top: 2px solid #F2A464;
+    margin: 6px;
+    padding: 10px;
+    line-height: 1.5;
+  }
+  /*----------------
+    診察案内
+----------------*/
+  #shinsatsu-annai main .first-view-bottom-wrap .first-view-bottom h3 {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.3;
+    border: none;
+  }
+  #shinsatsu-annai main .first-view-bottom-wrap .first-view-bottom h3 .responsive {
+    display: block;
+  }
+  #shinsatsu-annai main .shinsatsu {
+    background-color: #EADED0;
+    padding: 40px 0 50px 0px;
+  }
+  #shinsatsu-annai main .shinsatsu section {
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: auto;
+    margin: 0 auto;
+  }
+  #shinsatsu-annai main .shinsatsu section h4 {
+    font-size: 16px;
+    padding: 7px 0 10px 0;
+    margin: 0 auto 10px auto;
+    width: 130px;
+  }
+  #shinsatsu-annai main .shinsatsu section p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 340px;
+    margin: 0 10px 18px 10px;
+    text-align: justify;
+  }
+  #shinsatsu-annai main .shinsatsu .shinsatsu-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #shinsatsu-annai main .shinsatsu .shinsatsu-top .left {
+    margin-bottom: 20px;
+  }
+  #shinsatsu-annai main .shinsatsu .shinsatsu-top .left .pc {
+    display: none;
+  }
+  #shinsatsu-annai main .shinsatsu .shinsatsu-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0 10px 0 10px;
+  }
+  #shinsatsu-annai main .shinsatsu .shinsatsu-bottom .left.hvr-shadow {
+    margin-bottom: 20px;
+  }
+  #shinsatsu-annai main .shinsatsu .shinsatsu-bottom .left.hvr-shadow p {
+    max-width: 290px;
+  }
+  #shinsatsu-annai main .shinsatsu .shinsatsu-bottom .right.hvr-shadow p {
+    max-width: 290px;
+  }
+  #shinsatsu-annai main .wakuchin {
+    margin-bottom: 80px;
+    margin-top: 60px;
+  }
+  #shinsatsu-annai main .wakuchin .wakuchin-left .left-text {
+    width: 60%;
+    height: 30px;
+    margin-top: -30px;
+    padding-top: 0;
+  }
+  #shinsatsu-annai main .wakuchin .wakuchin-left .left-text p {
+    font-size: 12px;
+    width: 92%;
+    line-height: 1.4;
+    margin-top: 30px;
+  }
+  #shinsatsu-annai main .wakuchin .wakuchin-left .left-text .pc {
+    display: none;
+  }
+  #shinsatsu-annai main .wakuchin .wakuchin-right {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    margin-right: 2%;
+  }
+  #shinsatsu-annai main .wakuchin .wakuchin-right h4 {
+    font-size: 20px;
+    padding: 10px 0 10px 4px;
+  }
+  #shinsatsu-annai main .wakuchin .wakuchin-right p {
+    line-height: 1.2;
+    padding: 10px 2px 10px 8px;
+    font-size: 15px;
+  }
+  #shinsatsu-annai main .kyokenbyo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 30px 30px 60px 30px;
+    margin-bottom: 80px;
+  }
+  #shinsatsu-annai main .kyokenbyo .kyokenbyo-left section {
+    margin-bottom: 20px;
+  }
+  #shinsatsu-annai main .kyokenbyo .kyokenbyo-left h4 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  #shinsatsu-annai main .kyokenbyo .kyokenbyo-left h4 .responsive {
+    display: block;
+  }
+  #shinsatsu-annai main .kyokenbyo .kyokenbyo-left p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  #shinsatsu-annai main .kyokenbyo .kyokenbyo-left p span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #shinsatsu-annai main .kyokenbyo .kyokenbyo-left .touroku {
+    margin-bottom: 40px;
+  }
+  #shinsatsu-annai main .saisei {
+    margin-bottom: 80px;
+  }
+  #shinsatsu-annai main .saisei .saisei-left {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    margin-left: 2%;
+  }
+  #shinsatsu-annai main .saisei .saisei-left h4 {
+    font-size: 20px;
+    padding: 10px 6px 10px 4px;
+  }
+  #shinsatsu-annai main .saisei .saisei-left p {
+    line-height: 1.2;
+    padding: 10px 6px 10px 6px;
+  }
+  #shinsatsu-annai main .saisei .saisei-right .right-text {
+    background-color: #F6F0E9;
+    width: 60%;
+    height: 30px;
+    margin-top: -30px;
+    padding: 0;
+    border-radius: 0 50px 0 0;
+  }
+  #shinsatsu-annai main .saisei .saisei-right .right-text p {
+    font-size: 11px;
+    width: 92%;
+    line-height: 1.4;
+    margin-top: 14px;
+  }
+  #shinsatsu-annai main .ryoho {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 40px 20px 50px 20px;
+    margin-bottom: 80px;
+  }
+  #shinsatsu-annai main .ryoho h4 {
+    font-size: 16px;
+    padding: 10px 14px 10px 10px;
+    margin-top: 23px;
+  }
+  #shinsatsu-annai main .ryoho img {
+    margin-bottom: 20px;
+  }
+  #shinsatsu-annai main .ryoho p {
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0 10px;
+  }
+  #shinsatsu-annai main .ryoho p span {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  #shinsatsu-annai main .ryoho .ryoho-left {
+    margin-bottom: 40px;
+  }
+  /*----------------
+     トリミング
+----------------*/
+  #trimming main .first-view-bottom h3 {
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: justify;
+    margin: 0 15px 0 4px;
+  }
+  #trimming main .trimming-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 40px 10px 40px 10px;
+  }
+  #trimming main .trimming-service div {
+    min-height: 140px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  #trimming main .miryoku {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 40px 10px 30px 10px;
+    margin: 0 10px 60px 10px;
+  }
+  #trimming main .miryoku .miryoku-left {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  #trimming main .miryoku .miryoku-right {
+    margin-left: 0;
+  }
+  #trimming main .miryoku section {
+    padding: 0;
+    margin: 0 10px;
+  }
+  #trimming main .miryoku h4 {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  #trimming main .miryoku img {
+    margin-bottom: 20px;
+  }
+  #trimming main .miryoku p {
+    line-height: 1.6;
+  }
+  #trimming main .miryoku h5 {
+    font-size: 17px;
+  }
+  #trimming main .miryoku ul li {
+    margin: 0 0 10px 10px;
+    text-align: left;
+  }
+  /*----------------
+  ペットホテル
+----------------*/
+  #hotel main .first-view-bottom-wrap {
+    margin-bottom: 50px;
+  }
+  #hotel main .first-view-bottom-wrap .first-view-bottom h3 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 15px 0 4px;
+  }
+  #hotel main .main-content-title .hotel-service-miryoku {
+    font-size: 20px;
+  }
+  #hotel main .hotel-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 40px 10px 20px 10px;
+  }
+  #hotel main .hotel-service div img {
+    margin-bottom: 10px;
+  }
+  #hotel main .hotel-service div section {
+    margin-bottom: 40px;
+  }
+  #hotel main .hotel-service div section h4 {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+  #hotel main .hotel-service div section p {
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 10px;
+  }
+  #hotel main .chui-jikou-bg {
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+  #hotel main .chui-jikou-bg .chui-jikou .chui-left {
+    text-align: left;
+    margin: 0 12px;
+  }
+  #hotel main .chui-jikou-bg .chui-jikou .chui-right img {
+    width: 80%;
+  }
+  /*----------------
+     院内紹介
+----------------*/
+  #innai-shoukai main .first-view-bottom h3 {
+    font-size: 11px;
+    margin-top: 0;
+  }
+  #innai-shoukai main .first-view-bottom h3 .responsive {
+    display: block;
+  }
+  #innai-shoukai main .first-view-bottom h3 .pc {
+    display: none;
+  }
+  #innai-shoukai main .innai-shoukai-all {
+    padding: 40px 10px 10px 10px;
+    border-radius: 30px;
+    margin: 0 0 60px 0;
+  }
+  #innai-shoukai main .innai-shoukai-all .innai-shoukai-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #innai-shoukai main .innai-shoukai-all .innai-shoukai-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #innai-shoukai main .innai-shoukai-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #innai-shoukai main section {
+    margin-bottom: 40px;
+  }
+  #innai-shoukai main section img {
+    margin-bottom: 8px;
+  }
+  #innai-shoukai main section p {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  /*----------------
+     アクセス
+----------------*/
+  #access main .first-view-bottom-wrap {
+    margin-bottom: 50px;
+  }
+  #access main .first-view-bottom-wrap .first-view-bottom h3 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 0 4px;
+  }
+  #access main .first-view-bottom-wrap .first-view-bottom h3 .responsive {
+    display: block;
+  }
+  #access main .access {
+    padding: 40px 0;
+    margin: 0 10px 60px 10px;
+  }
+  #access main .access .access-iinjoho {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #access main .access .access-iinjoho .access-left {
+    margin: 0 0 30px 0;
+    width: 90%;
+  }
+  #access main .access .access-iinjoho .access-left iframe {
+    width: 100%;
+  }
+  #access main .access .access-iinjoho .access-right {
+    width: auto;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #access main .access .access-iinjoho .access-right .responsive {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  #access main .access .access-iinjoho .access-right .responsive h4 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 0.8;
+  }
+  #access main .access .access-iinjoho .access-right .responsive h4 span {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  #access main .access .access-iinjoho .access-right .responsive address {
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  #access main .access .access-iinjoho .access-right .responsive address .responsive {
+    display: block;
+  }
+  #access main .access .access-iinjoho .access-right .responsive address a {
+    font-size: 12px;
+    padding: 1px 6px 2px 6px;
+    margin-left: 4px;
+  }
+  #access main .access .access-iinjoho .access-right .responsive p {
+    font-size: 18px;
+    line-height: 0.8;
+  }
+  #access main .access .access-iinjoho .access-right .responsive p span {
+    font-size: 16px;
+  }
+  #access main .access .access-iinjoho .access-right table th {
+    padding: 16px 4px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  #access main .access .access-iinjoho .access-right table td {
+    padding: 16px 8px;
+  }
+  #access main .access .access-iinjoho .access-right .table-bottom p {
+    font-size: 14px;
+    margin-left: -30px;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

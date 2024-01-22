@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @media screen and (max-width: 480px) {
   /*-------------
-    全体構造 
----------------*/
+      全体構造 
+  ---------------*/
   /*---幅の調整---*/
   .content {
     width: auto;
@@ -90,19 +90,10 @@
     margin-bottom: 60px;
   }
   main .chui-jikou-bg .chui-jikou {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   main .chui-jikou-bg .chui-jikou .chui-left {
@@ -144,32 +135,26 @@
     font-size: 30px;
   }
   /*-------------
- ヘッダー
----------------*/
+   ヘッダー
+  ---------------*/
   header {
     overflow: visible;
     z-index: 10;
     position: relative;
   }
   header .header-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-  }
-  header .header-menu h1 {
-    margin: 30px 16px;
   }
   header .header-menu .pc-nav {
     display: none;
   }
   header.on {
     opacity: 1;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   /*-------------
-  フッター
----------------*/
+    フッター
+  ---------------*/
   footer {
     overflow: hidden;
   }
@@ -178,19 +163,10 @@
     margin: 50px auto 70px auto;
   }
   footer .footer-menu .footer-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin-bottom: 20px;
   }
@@ -206,19 +182,10 @@
     margin-right: 30px;
   }
   footer .footer-menu .footer-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0 auto;
   }
@@ -239,8 +206,8 @@
     white-space: nowrap;
   }
   /*-------------
-  トップページ
- ---------------*/
+   トップページ
+  ---------------*/
   #home .main-image {
     margin: 0 auto 40px auto;
     text-align: center;
@@ -251,9 +218,7 @@
     top: 10%;
     padding: 2px 16px;
     opacity: 0;
-    -webkit-transform: translate(0, 40px);
-            transform: translate(0, 40px);
-    -webkit-transition: all 1000ms;
+    transform: translate(0, 40px);
     transition: all 1000ms;
   }
   #home .main-image .hospital h2 {
@@ -305,8 +270,8 @@
     margin: 0 auto 80px auto;
   }
   /*-------------
-  当院について
- ---------------*/
+   当院について
+  ---------------*/
   #about main .aisatsu-all .aisatsu {
     display: block;
     margin-bottom: 50px;
@@ -351,22 +316,13 @@
   #about main .onegai {
     width: 95%;
     margin-bottom: 80px;
-    padding: 40px  10px 30px 10px;
+    padding: 40px 10px 30px 10px;
   }
   #about main .onegai .onegai-text section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto 30px auto;
     width: auto;
     background-color: #F6F0E9;
@@ -395,8 +351,8 @@
     line-height: 1.5;
   }
   /*----------------
-    診察案内
-----------------*/
+      診察案内
+  ----------------*/
   #shinsatsu-annai main .first-view-bottom-wrap .first-view-bottom h3 {
     text-align: left;
     font-size: 14px;
@@ -431,19 +387,10 @@
     text-align: justify;
   }
   #shinsatsu-annai main .shinsatsu .shinsatsu-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -454,19 +401,10 @@
     display: none;
   }
   #shinsatsu-annai main .shinsatsu .shinsatsu-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0 10px 0 10px;
   }
@@ -499,9 +437,7 @@
     display: none;
   }
   #shinsatsu-annai main .wakuchin .wakuchin-right {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
     margin-right: 2%;
   }
   #shinsatsu-annai main .wakuchin .wakuchin-right h4 {
@@ -514,19 +450,10 @@
     font-size: 15px;
   }
   #shinsatsu-annai main .kyokenbyo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 30px 30px 60px 30px;
     margin-bottom: 80px;
@@ -556,9 +483,7 @@
     margin-bottom: 80px;
   }
   #shinsatsu-annai main .saisei .saisei-left {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
     margin-left: 2%;
   }
   #shinsatsu-annai main .saisei .saisei-left h4 {
@@ -584,19 +509,10 @@
     margin-top: 14px;
   }
   #shinsatsu-annai main .ryoho {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 40px 20px 50px 20px;
     margin-bottom: 80px;
@@ -624,8 +540,8 @@
     margin-bottom: 40px;
   }
   /*----------------
-     トリミング
-----------------*/
+       トリミング
+  ----------------*/
   #trimming main .first-view-bottom h3 {
     font-size: 12px;
     line-height: 1.3;
@@ -633,19 +549,10 @@
     margin: 0 15px 0 4px;
   }
   #trimming main .trimming-service {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 40px 10px 40px 10px;
   }
@@ -656,19 +563,10 @@
     padding: 20px;
   }
   #trimming main .miryoku {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 40px 10px 30px 10px;
     margin: 0 10px 60px 10px;
@@ -703,8 +601,8 @@
     text-align: left;
   }
   /*----------------
-  ペットホテル
-----------------*/
+    ペットホテル
+  ----------------*/
   #hotel main .first-view-bottom-wrap {
     margin-bottom: 50px;
   }
@@ -717,19 +615,10 @@
     font-size: 20px;
   }
   #hotel main .hotel-service {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 40px 10px 20px 10px;
   }
@@ -761,8 +650,8 @@
     width: 80%;
   }
   /*----------------
-     院内紹介
-----------------*/
+       院内紹介
+  ----------------*/
   #innai-shoukai main .first-view-bottom h3 {
     font-size: 11px;
     margin-top: 0;
@@ -779,53 +668,26 @@
     margin: 0 0 60px 0;
   }
   #innai-shoukai main .innai-shoukai-all .innai-shoukai-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-bottom: 0;
   }
   #innai-shoukai main .innai-shoukai-all .innai-shoukai-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-bottom: 0;
   }
   #innai-shoukai main .innai-shoukai-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   #innai-shoukai main section {
@@ -840,8 +702,8 @@
     letter-spacing: 1px;
   }
   /*----------------
-     アクセス
-----------------*/
+       アクセス
+  ----------------*/
   #access main .first-view-bottom-wrap {
     margin-bottom: 50px;
   }
@@ -858,19 +720,10 @@
     margin: 0 10px 60px 10px;
   }
   #access main .access .access-iinjoho {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   #access main .access .access-iinjoho .access-left {
@@ -883,19 +736,10 @@
   #access main .access .access-iinjoho .access-right {
     width: auto;
     margin-right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   #access main .access .access-iinjoho .access-right .responsive {
@@ -944,5 +788,4 @@
     margin-left: -30px;
     text-align: left;
   }
-}
-/*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */
